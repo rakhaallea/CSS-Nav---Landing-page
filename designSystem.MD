@@ -255,7 +255,7 @@ Navbar:
 
 ---
 
-## RABU ✅
+## RABU 
 
 Hero:
 

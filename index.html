@@ -15,14 +15,17 @@
     <header>
         <nav>
             <div class="logo">
-                <h1>RakDev.</h1>
+                <h1>CSS Nav.</h1>
             </div>
             <ul class="nav-list">
-                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Features</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Testimonials</a></li>
             </ul>
             <div class="cta">
+                <button class="btn-secondary">Log in</button>
                 <button class="btn-primary">Sign Up</button>
             </div>
             <div class="ham-icon">
@@ -34,8 +37,57 @@
     </header>
 
     <!-- Hero Section -->
-    <section>
-        <h1>Hero Section</h1>
+    <section class="hero">
+        <div class="hero-left">
+            <p class="hero-badge">BUILD FASTER.SHIP SOONER.</p>
+            <h1 class="title">Build beautiful websites with <span class="highlight">ease.</span></h1>
+            <p class="desc">A modern landing page starter template built with HTML and CSS. Focus on your content, we’ll
+                handle the
+                design.
+            </p>
+            <div class="hero-cta">
+                <button class="btn-primary">Get Started</button>
+                <button class="btn-secondary">Learn More</button>
+            </div>
+            <div class="hero-benefits">
+                <div>
+                    <div class="benefit-icons">
+                        <span class="material-icons ben-icon">
+                            bolt
+                        </span>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Fast</h3>
+                        <p>Optimized for speed</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="benefit-icons">
+                        <span class="material-icons ben-icon">
+                            security
+                        </span>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Secure</h3>
+                        <p>Best practices</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="benefit-icons">
+                        <span class="material-icons ben-icon">
+                            devices
+                        </span>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Responsive</h3>
+                        <p>Work on all devices</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <img src="assets/hero.png" alt="hero image">
+        </div>
     </section>
     
     <script src="index.js"></script>

@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 :root {
     /* Color */
@@ -33,7 +34,6 @@
 body {
     background-color: var(--background-color);
     font-family: "Poppins", sans-serif;
-    height: 200vh;
 }
 
 .ham-icon {
@@ -47,7 +47,10 @@ body {
 }
 
 section {
-    padding: 80px 0;
+    padding: 0px 240px;
+        margin: 0px 0;
+        border: 1px solid black;
+        height: 100vh;
 }
 
 header {
@@ -97,6 +100,9 @@ nav ul li a:hover {
     color: var(--primary-color);
 }
 
+nav ul li a.active {
+    color: var(--primary-color);
+}
 .logo {
     flex: 1;
     font-size: 1.2em;
@@ -116,6 +122,7 @@ nav ul li a:hover {
     flex: 2;
     display: flex;
     justify-content: flex-end;
+    gap: 20px;
 }
 
 /* Button */
@@ -140,6 +147,125 @@ nav ul li a:hover {
     border: 1px solid var(--border-color);
     padding: 12px 24px;
     border-radius: 10px;
+    cursor: pointer;
+    }
+    
+    .btn-secondary:hover {
+        transform: translateY(-2px);
+        opacity: 0.9;
+    }
+    
+    /* hero section */
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: red; */
+    }
+    
+    .hero-left {
+        /* background-color: yellow; */
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .hero-left .hero-badge {
+        background-color: rgba(37, 99, 235, .1);
+        color: #2563eb;
+        font-size: 18px;
+        font-weight: 500;
+        width: fit-content;
+        padding: 12px 28px;
+        border-radius: 50px;
+    }
+    
+    .hero-left .title {
+        font-size: 82px;
+        width: 80%;
+        line-height: 1.2;
+        color: #1e293b;
+    }
+    
+    .highlight {
+        color: #2563eb;
+    }
+    
+    .hero-left .desc {
+        font-size: 30px;
+        width: 62%;
+        color: #64748b;
+        font-weight: 400;
+    }
+    
+    .hero-cta {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .hero-left .btn-primary,
+    .hero-left .btn-secondary {
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        padding: 18px 32px;
+    }
+    
+    .hero-benefits {
+        display: flex;
+        gap: 38px;
+    }
+    
+    .hero-benefits>div {
+        display: flex;
+        gap: 12px;
+    }
+    
+    .hero-benefits .benefit-text {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .hero-benefits .benefit-text h3 {
+        font-size: 24px;
+        font-weight: 500;
+        color: #1e293b;
+    }
+    
+    .hero-benefits .benefit-text p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #64748b;
+    }
+    
+    .benefit-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 68px;
+        height: 68px;
+        background-color: rgba(37, 99, 235, .1);
+        border-radius: 10px;
+    }
+    
+    .material-icons.ben-icon {
+        color: var(--primary-color);
+        font-size: 42px;
+    }
+    
+    .hero-right {
+        /* background-color: blue; */
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .hero-right img {
+        width: 90%;
 }
 
 @media (max-width: 768px) {
