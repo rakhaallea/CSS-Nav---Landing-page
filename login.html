@@ -13,7 +13,7 @@
 
 <body>
     <section class="form-login">
-        <form action="" class="form-left">
+        <form action="" class="form-left" id="form-login">
             <div class="form-head">
                 <h2>CCS Nav</h2>
                 <p>Don't have any account? <span><a href="">Sign Up</a></span></p>
@@ -25,13 +25,15 @@
                 </div>
                 <div class="input-group">
                     <label for="">Email address</label>
+                    <small class="error-message"></small>
                     <span class="material-icons icon-left">
                         mail
                     </span>
-                    <input type="email" placeholder="you@example.com">
+                    <input type="email" placeholder="you@example.com" id="email">
                 </div>
                 <div class="input-group">
                     <label for="">Password</label>
+                    <small class="error-message"></small>
                     <span class="material-icons icon-left">
                         lock
                     </span>
@@ -39,6 +41,7 @@
                     <span class="material-icons icon-right" id="show-icon">
                         visibility
                     </span>
+                    <!-- <small class="error-message">error</small> -->
                 </div>
                 <a href="#">Forgot password?</a>
                 <div class="input-check">

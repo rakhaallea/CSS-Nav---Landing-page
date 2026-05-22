@@ -104,6 +104,21 @@ body {
   box-shadow: 0 0 5px rgba(37, 99, 235, 0.4);
 }
 
+.input-group.error input {
+  border-color: red;
+  /* box-shadow: 0 0 5px rgba(37, 99, 235, 0.4); */
+}
+.input-group.success input {
+  border-color: green;
+  /* box-shadow: 0 0 5px rgba(37, 99, 235, 0.4); */
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
 .form-body a {
   text-align: end;
   text-decoration: none;
