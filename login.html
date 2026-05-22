@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CSS Nav</title>
+
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="form-login">
+        <form action="" class="form-left">
+            <div class="form-head">
+                <h2>CCS Nav</h2>
+                <p>Don't have any account? <span><a href="">Sign Up</a></span></p>
+            </div>
+            <div class="form-body">
+                <div>
+                    <h1>Welcome back</h1>
+                    <p>Please login to your account</p>
+                </div>
+                <div class="input-group">
+                    <label for="">Email address</label>
+                    <span class="material-icons icon-left">
+                        mail
+                    </span>
+                    <input type="email" placeholder="you@example.com">
+                </div>
+                <div class="input-group">
+                    <label for="">Password</label>
+                    <span class="material-icons icon-left">
+                        lock
+                    </span>
+                    <input type="password" placeholder="Enter your password" id="password">
+                    <span class="material-icons icon-right" id="show-icon">
+                        visibility
+                    </span>
+                </div>
+                <a href="#">Forgot password?</a>
+                <div class="input-check">
+                    <input type="checkbox">
+                    <p>Remember me</p>
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+            </div>
+        </form>
+        <div class="form-right">
+            <img src="assets/Authentication-rafiki.png" alt="login image">
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>

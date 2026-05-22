@@ -1,0 +1,139 @@
+@import url("style.css");
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8fafc;
+}
+
+.form-login {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  height: auto;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.02);
+}
+
+.form-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  /* background-color: red; */
+}
+
+.form-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-head h2 {
+  font-size: 18px;
+  color: #1e293b;
+}
+.form-head p {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.form-head p span a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 80px 60px;
+}
+
+.form-body > div > h1 {
+  font-size: 28px;
+  color: #1e293b;
+}
+
+.form-body > div > p {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.form-body .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.form-body .input-group label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-body .input-group .icon-left {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #64748b;
+  z-index: 99;
+}
+
+.form-body .input-group .icon-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #64748b;
+  z-index: 99;
+  cursor: pointer;
+}
+.form-body .input-group input {
+  padding: 14px 24px 14px 36px;
+  border-radius: 6px;
+  border: 1px solid rgba(100, 116, 139, 0.3);
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.4);
+}
+
+.form-body a {
+  text-align: end;
+  text-decoration: none;
+  font-size: 12px;
+  color: #2563eb;
+}
+
+.form-body .input-check {
+  display: flex;
+  gap: 6px;
+}
+
+.form-right {
+  flex: 1;
+  /* background-color: blue; */
+}
+.form-right img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .form-login {
+    width: 100%;
+  }
+
+  .form-body {
+    padding: 80px 0px;
+  }
+
+  .form-right {
+    display: none;
+  }
+}

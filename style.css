@@ -151,6 +151,8 @@ nav ul li a.active {
     padding: 12px 24px;
     border-radius: 10px;
     cursor: pointer;
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 .btn-secondary:hover {
