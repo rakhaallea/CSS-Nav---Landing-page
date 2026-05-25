@@ -1,4 +1,4 @@
-@import url("style.css");
+@import url("./style.css");
 
 body {
   height: 100vh;
@@ -114,9 +114,9 @@ body {
 }
 
 .error-message {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 .form-body a {

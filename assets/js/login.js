@@ -1,13 +1,3 @@
-const menuHamburger = document.querySelector(".ham-icon");
-const navList = document.querySelector(".nav-list");
-const navbar = document.querySelector('nav');
-
-if (menuHamburger && navList) {
-    menuHamburger.addEventListener("click", () => {
-        navList.classList.toggle("show-nav");
-    });
-}
-
 const passwordIcon = document.getElementById("show-icon");
 const passwordInput = document.getElementById("password");
 const emailInput = document.getElementById("email");
@@ -23,63 +13,56 @@ if (passwordIcon && passwordInput) {
             passwordIcon.innerHTML = "visibility"
             passwordInput.type = 'password'
         }
-})
+    })
+}
+
+if (formLogin) {
+    formLogin.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        validateInputs();
+    })
+
+    emailInput.addEventListener("input", () => {
+
+        const emailValue = emailInput.value.trim();
+
+        if (emailValue === "") {
+
+            removeValidation(emailInput);
+
+        } else if (!isValidEmail(emailValue)) {
+            setError(emailInput, "Invalid email format");
+
+        } else {
+
+            setSuccess(emailInput);
+
+        }
+
+    });
+
+    passwordInput.addEventListener("input", () => {
+
+        const passwordValue = passwordInput.value.trim();
+
+        if (passwordValue === "") {
+
+            removeValidation(passwordInput);
+
+        } else if (passwordValue.length < 6) {
+            setError(passwordInput, "Minimum 6 karakter");
+
+        } else {
+
+            setSuccess(passwordInput);
+
+        }
+
+    });
 }
 
 
-window.addEventListener("scroll", () => {
-    if (!navbar) return;
-
-    if (window.scrollY > 50) {
-        navbar.classList.add("blurred");
-    } else {
-        navbar.classList.remove("blurred");
-    }
-})
-
-formLogin.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    validateInputs();
-})
-
-emailInput.addEventListener("input", () => {
-
-    const emailValue = emailInput.value.trim();
-
-    if (emailValue === "") {
-
-        removeValidation(emailInput);
-
-    } else if (!isValidEmail(emailValue)) {
-        setError(emailInput, "Invalid email format");
-
-    } else {
-
-        setSuccess(emailInput);
-
-    }
-
-});
-
-passwordInput.addEventListener("input", () => {
-
-    const passwordValue = passwordInput.value.trim();
-
-    if (passwordValue === "") {
-
-        removeValidation(passwordInput);
-
-    } else if (passwordValue.length < 6) {
-        setError(passwordInput, "Minimum 6 karakter");
-
-    } else {
-
-        setSuccess(passwordInput);
-
-    }
-
-});
 
 function validateInputs() {
     let isValid = true;
